@@ -8,7 +8,7 @@ class IParcer
 public:
 	
 	virtual	~IParcer() {} 
-	virtual void InputOpeningNameFile() = 0;
+	virtual void InputOpenIniNameFile() = 0;
 
 
 

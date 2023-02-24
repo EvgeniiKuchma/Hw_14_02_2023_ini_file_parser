@@ -4,7 +4,7 @@
 class Parcer : public IParcer
 {
 public:
-	void InputOpeningNameFile() override;
+	void InputOpenIniNameFile() override;
 private:
 	std::ifstream file;
 	std::string name;

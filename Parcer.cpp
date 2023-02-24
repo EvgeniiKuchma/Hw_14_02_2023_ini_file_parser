@@ -1,6 +1,6 @@
 #include "Parcer.h"
 
-void Parcer::InputOpeningNameFile() {
+void Parcer::InputOpenIniNameFile() {
 
 while(!file.is_open()){	
 	std::cout << "Please enter name file : ";
