@@ -18,7 +18,7 @@ while(!file.is_open()){
 	else{
 		std::cout << "\nThe file entered is not an ini file, please try again;\n\n";
 	}
-	std::cin.clear();			
+	std::cin.ignore();
 }
 
 file.close();

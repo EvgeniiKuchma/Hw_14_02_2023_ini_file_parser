@@ -2,6 +2,8 @@
 #include <fstream>
 #include <string>
 #include <memory>
+#include <map>
+#include <regex>
 #include "IParcer.h"
 #include "Parcer.h"
 
@@ -16,7 +18,7 @@ int main() {
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <map>
+
 
 class IniFile {
 public:
@@ -69,7 +71,7 @@ public:
         }
     }
 
-    std::string get_value(const std::string& section, const std::string& key) const override {
+    std::string  get_value(const std::string& section, const std::string& key) const override {
         if (data_.count(section) == 0 || data_.at(section).count(key) == 0) {
             throw std::runtime_error("Section or key not found");
         }
